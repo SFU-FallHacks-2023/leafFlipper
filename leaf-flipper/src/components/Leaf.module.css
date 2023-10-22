@@ -1,0 +1,33 @@
+.leaf {
+  width: 100px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.front {
+  background: green;
+}
+
+.back {
+  background: brown;
+  transform: rotateY(180deg);
+}
