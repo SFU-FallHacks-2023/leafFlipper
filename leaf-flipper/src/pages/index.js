@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Leaf from '../components/Leaf';
+import Leaf from './leaf';
 
 export default function Home() {
   return (
